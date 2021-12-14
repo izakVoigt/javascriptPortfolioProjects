@@ -1,0 +1,58 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+body {
+    background-image: url(./bg.jpg);
+    color: rgb(235, 235, 235);
+    user-select: none;
+}
+.container {
+    width: 100vw;
+    height: 100vh; 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Montserrat';
+    background-color: #00000050;
+}
+.title {
+    text-align: center;
+}
+.title h1 {
+    font-size: calc(8vw + 30px);
+    text-shadow: 0 0 5px rgb(255, 255, 255);
+}
+.title p {
+    font-size: calc(1.2vw + 20px);
+    text-shadow: 0 0 5px rgb(255, 255, 255);
+    margin-bottom: 50px;
+}
+.countdown {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 50px;
+    text-align: center;
+}
+.countdown h1 {
+    font-size: calc(5vw + 20px);
+}
+#dias, #horas, #minutos, #segundos {
+    text-shadow: 0 0 20px rgb(255, 255, 255);
+}
+.button {
+    padding: 15px;
+    margin: 80px;
+    background-color: rgb(235, 235, 235);
+    color: rgb(0, 0, 0);
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all .2s;
+}
+.button:hover {
+    background-color: rgb(200, 200, 200);
+    transform: scale(1.1);
+}
